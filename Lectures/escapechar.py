@@ -39,3 +39,14 @@ split over \
 several lines."""
 print(yet_another_split_string)
 #This string has been split over several lines.
+
+#Escape character for backslash
+
+# To include a backslash in a string, you need to escape it 
+# with another backslash.
+print("C:\\Users\\Temp\\Documents") # C:\Users\Temp\Documents
+# Alternatively, you can use raw strings by prefixing the string
+# with 'r' to avoid escaping backslashes.
+print(r"C:\Users\Temp\Documents") # C:\Users\Temp\Documents
+
+
