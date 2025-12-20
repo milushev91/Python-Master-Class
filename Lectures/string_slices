@@ -1,0 +1,26 @@
+#String Slices
+# In Python, you can extract a portion of a string using slicing.
+# Slicing allows you to specify a start and end index to create a substring.
+# Slicing has three components: start index, end index, and step (optional).
+# The character at the end index is not included in the slice.
+# if no step is provided, it defaults to 1.
+# if no start index is provided, it defaults to 0.
+# if no end index is provided, it defaults to the length of the string.
+         #012345678911234
+parrot = "Norwegian Blue"
+# Use slice and create substring from index 0 to 6 (not including 6)
+print(parrot[0:6])    # Output: Norweg
+print(parrot[3:5])    # Output: we
+print(parrot[0:9])    # Output: Norwegian
+print(parrot[:9])     # Output: Norwegian
+
+#Challenge: print Blue using slicing
+print(parrot[10:]) #  Output: Blue
+print(parrot[10:14]) #  Output: Blue
+print(parrot[-4:]) #  Output: Blue
+
+print(parrot[:6])  # Output: Norweg
+print(parrot[6:])  # Output: ian Blue
+
+print(parrot[:])   # Output: Norwegian Blue
+print(parrot[:6] + parrot[6:])  # Output: Norwegian Blue
