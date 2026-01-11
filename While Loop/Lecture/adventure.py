@@ -10,5 +10,5 @@ while chosen_exit not in available_exits:
         #break does the same thing with while loop as for loop
         #it stops the loop
         break
-
-print("aren't you glad you got out of there")
+else:
+    print("aren't you glad you got out of there")
