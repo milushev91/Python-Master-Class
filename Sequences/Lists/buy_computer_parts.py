@@ -15,8 +15,18 @@ print(valid_choices)
 
 while current_choice != "0":
     if current_choice in valid_choices:
-        print(f"Adding {current_choice}")
-        computer_parts.append(options[int(current_choice) - 1]) 
+        choisen_option = options[int(current_choice) - 1]
+
+        if choisen_option in computer_parts:
+            print("Removing " + choisen_option)
+            #remove method removes the first occurrence of a value from a list
+            #if the value is not found, it raises a ValueError
+            computer_parts.remove(choisen_option)
+        else:
+            print(f"Adding {current_choice}")
+            computer_parts.append(choisen_option) 
+
+        print(f"Your computer parts are now: {computer_parts}")
     else:
         print("Please choose from the following options:")
         # for i in range(options_length):
