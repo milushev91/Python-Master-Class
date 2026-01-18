@@ -24,6 +24,12 @@ print(numbers) #Original list remains unchanged: [2.3, 4.5, 8.7, 3.1, 9.2, 1.6]
 numbers.sort()
 
 print(numbers) #Output: [1.6, 2.3, 3.1, 4.5, 8.7, 9.2]
+missing_letter = sorted("The quick brown fox jumped over the lay dog", key=str.casefold)
 
+names = ["Graham", "John", "terry", "eric", "michael", "Terry", "Graham"]
+
+#
+names.sort(key=str.casefold)
+print(names) #Output: ['eric', 'Graham', 'Graham', 'John', 'michael', 'terry', 'Terry']
 
 
