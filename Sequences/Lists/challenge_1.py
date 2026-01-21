@@ -11,18 +11,17 @@ menu = [
 
 #printing solution
 
-# for meal in menu:
-#     line = "[ "
+for meal in menu:
+    line = ""
 
-#     for item in meal:
-#         if item != "spam":
-#             line += item + ", "
-#     line += "]"  
-#     print(line)
+    for item in meal:
+        if item != "spam":
+            line += item + " "
+    print(line)
 
 #modifying list
 
-for meal in menu:
-    while "spam" in meal:
-        meal.remove("spam")
-    print(meal)
+# for meal in menu:
+#     while "spam" in meal:
+#         meal.remove("spam")
+#     print(*meal)
