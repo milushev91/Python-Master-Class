@@ -4,6 +4,13 @@
 # this allows you to pass different values to the same function,
 # making the function more flexible and reusable.
 def multiply(x, y):
+    """
+    The function will multiply two numbers.
+    
+    :param x: number 
+    :param y: number
+    :return: the result of x times y
+    """
     result = x * y
     return result
 
