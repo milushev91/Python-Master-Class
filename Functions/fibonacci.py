@@ -1,4 +1,4 @@
-def fibonacci(n):
+def fibonacci(n: int) -> any:
     """
     Generates a fibonacci sequence until last number > n, when value greater than 1 is given,
     returns n. Raises ValueError if negative value of n is recieved. 
@@ -25,4 +25,4 @@ def fibonacci(n):
     
     return [str(num) for num in numbers]
 
-print(fibonacci(36))
+print(fibonacci("str"))
