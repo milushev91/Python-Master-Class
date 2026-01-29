@@ -1,5 +1,15 @@
 #functions can use parameters and you can set them a default value
-def banner_text(text=" ", screen_width=80):
+def banner_text(text: str = " ", screen_width: int = 80) -> None:
+    """
+    Centers text inside * with adjustable screen width and prints it on the console. 
+    Raises ValueError if text length is larger than screen width minus 4.
+    
+    :param text (str): Text to be centered as string.
+    :param screen_width (int): Screen width as integer number
+
+    :return: None
+
+    """
 
     if len(text) > screen_width - 4:
         raise ValueError("String '{0}' is larger than specified width {1}".format(text, screen_width - 4))
