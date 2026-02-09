@@ -23,6 +23,17 @@ def simple_hash(s: str) -> int:
     basic_hash = ord(s[0]) % 10
     return basic_hash
 
+
+def get(key: str) -> str:
+    """Return a value for a key or None if key doesn't exist."""
+
+    hash_code = simple_hash(key)
+
+    if values[hash_code]:
+        return values[hash_code]
+    else:
+        return None
+
 # Python built in hash function vs our simple hash function
 for key in data:
     print(hash(key), simple_hash(key[0]))
@@ -38,3 +49,7 @@ for key, value in data:
 
 print(keys)
 print(values)
+print()
+
+value = get("lemon")
+print(value) # Output: a sour, yellow citrus fruit
